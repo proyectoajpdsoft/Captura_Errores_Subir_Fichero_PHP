@@ -1,3 +1,4 @@
+<?php
 if (empty($_FILES["fichero"]["name"]))
 {
   header("Location: index.php");
@@ -61,3 +62,4 @@ if ($tamano_archivo == 0)
     header("Location: index.php?codigo={$_POST["cod"]}");
     die;
 }
+?>
